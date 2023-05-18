@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>project</title>
+
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    
+</head>
+<body>
+
+
+	<form enctype="multipart/form-data" action="dbscanAlgo" method="post"> 
+        {% csrf_token %}
+        <div class="form_class">
+            <div class="input_container">
+            <input type="file"  name="filePath"/>
+            </div> 
+            <br> <br>
+            <label for="select_1"> <div>Algorithme</div> 
+            <select name="select1">
+                <option value="op1">DBSCAN</option>
+            </select>
+            </label>
+            <br> 
+            <label><div>Kernel</div>
+            <input type="text" name="input2" placeholder="type kernel size" id="in1"> <br>
+            </label>
+            <br>
+            <label><div>sensitivity</div>
+            <input type="text" name="input3" placeholder="must be an even number" id="in2"> <br>
+            </label>
+            <br>
+            <input type="submit" value="Submit" /> 
+        </div>
+        <!-- show image -->
+        {% if filePathName %}
+        <br><br>
+        <img src={{filePathName}} alt='imagename' width="500" height="500">
+        <!-- {{filePathName}} -->
+        <!-- {{input1}} -->
+        <img src={{filename}} alt='imagename2' width="500" height="500">
+        <br><br>
+        <ul>
+            <li> <h5>sunspot number :</h5> {{Sunspot}}</li>
+            <li> <h5>number of cluster :</h5>{{num_clusters}}</li>
+            <li> <h5>wolf number :</h5>{{wolf}}</li>
+        </ul>
+
+        {% endif %}
+
+    </form>
+
+</body>
+</html>

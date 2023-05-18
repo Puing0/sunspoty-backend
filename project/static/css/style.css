@@ -1,0 +1,100 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgba(17, 219, 207,0.8);
+    text-align: center;
+}
+
+/*form {
+    display: inline-block;
+}*/
+
+body .form_class{
+
+    display:inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    height: auto;
+    padding: 15px 18px;
+    margin: 10% auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+label {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  width: 400px;
+}
+
+ul {
+    display:inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    height: auto;
+    padding: 15px 18px;
+    margin: 10% auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-class {
+    display: inline-block;
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=file]::file-selector-button {
+  background-color: #fff;
+  color: #000;
+  border: 0px;
+  border-right: 1px solid #e5e5e5;
+  padding: 10px 15px;
+  margin-right: 20px;
+  transition: .5s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #eee;
+  border: 1px;
+  border-right: 1px solid #e5e5e5;
+}
+.input_container {
+  border: 1px solid #e5e5e5;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 8px;
+  width: 500;
+  height: 500;
+}
